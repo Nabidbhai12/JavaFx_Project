@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="628.0" prefWidth="731.0" style="-fx-background-color: #00ff55;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller1">
+   <children>
+      <Button fx:id="playername" layoutX="55.0" layoutY="240.0" mnemonicParsing="false" onAction="#PlayerName" prefHeight="40.0" prefWidth="222.0" style="-fx-background-color: #ff6645;" text="By Player Name">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="19.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.34736841917037964" green="0.04116959124803543" blue="0.04116959124803543" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></Button>
+      <Button fx:id="playerposition" layoutX="403.0" layoutY="247.0" mnemonicParsing="false" onAction="#PlayerPosition" prefHeight="38.0" prefWidth="238.0" style="-fx-background-color: #f3ee00;" text="By player position">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="18.0" />
+         </font></Button>
+      <Button fx:id="clubandcountry" layoutX="55.0" layoutY="314.0" mnemonicParsing="false" onAction="#ClubandCountry" prefHeight="26.0" prefWidth="222.0" style="-fx-background-color: #ffaabb;" text="By club and country">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="18.0" />
+         </font></Button>
+      <Button fx:id="salaryrange" layoutX="403.0" layoutY="314.0" mnemonicParsing="false" onAction="#SalaryRange" prefHeight="26.0" prefWidth="238.0" style="-fx-background-color: #d4300e;" text="By salary Range">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="18.0" />
+         </font></Button>
+      <Button fx:id="countrywise" layoutX="42.0" layoutY="381.0" mnemonicParsing="false" onAction="#CountryWise" prefHeight="38.0" prefWidth="238.0" style="-fx-background-color: #00b5f3;" text="By countrywise">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="18.0" />
+         </font></Button>
+      <Button fx:id="exit" layoutX="403.0" layoutY="400.0" mnemonicParsing="false" onAction="#Exit" prefHeight="38.0" prefWidth="251.0" text="Return">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="18.0" />
+         </font></Button>
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" />
+      <ImageView fitHeight="124.0" fitWidth="384.0" layoutX="88.0" layoutY="10.0">
+         <image>
+            <Image url="@pic5.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

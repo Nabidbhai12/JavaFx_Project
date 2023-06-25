@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="561.0" prefWidth="860.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerSell">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="518.0" prefWidth="848.0">
+         <children>
+            <Button fx:id="sell" layoutX="171.0" layoutY="233.0" mnemonicParsing="false" onAction="#sellbtn" text="Sell">
+               <font>
+                  <Font name="Berlin Sans FB Bold" size="18.0" />
+               </font></Button>
+            <TableView fx:id="totaltable" layoutX="25.0" layoutY="278.0" prefHeight="184.0" prefWidth="738.0">
+               <columns>
+                  <TableColumn fx:id="Name" prefWidth="148.79998779296875" text="Name" />
+                  <TableColumn minWidth="0.0" prefWidth="0.0" text="C2" />
+                  <TableColumn fx:id="Country" prefWidth="112.79998779296875" text="Country" />
+                  <TableColumn fx:id="Age" prefWidth="49.59991455078125" text="Age" />
+                  <TableColumn fx:id="Height" prefWidth="75.0" text="Height" />
+                  <TableColumn fx:id="Clubname" prefWidth="75.0" text="Clubname" />
+                  <TableColumn fx:id="Position" prefWidth="75.0" text="Position" />
+                  <TableColumn fx:id="Number" prefWidth="75.0" text="Number" />
+                  <TableColumn fx:id="Weeklysalary" prefWidth="125.60001220703123" text="Weekly salary" />
+               </columns>
+            </TableView>
+            <Button fx:id="back" layoutX="333.0" layoutY="233.0" mnemonicParsing="false" onAction="#Back" text="back" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="Berlin Sans FB Bold" size="18.0" />
+               </font></Button>
+            <Label fx:id="label" layoutX="366.0" layoutY="486.0" />
+            <Button fx:id="showList" layoutX="489.0" layoutY="233.0" mnemonicParsing="false" onAction="#Showlist" text="Refresh" textFill="#029911">
+               <font>
+                  <Font name="Berlin Sans FB Bold" size="18.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="120.0" fitWidth="848.0" layoutX="10.0" layoutY="10.0">
+         <image>
+            <Image url="@pic4.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
